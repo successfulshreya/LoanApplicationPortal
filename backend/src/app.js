@@ -2,9 +2,11 @@ import express from 'express';
 import dotenv from 'dotenv';
 import cors from 'cors';
 
-// Sahi path (Kyunki app.js khud 'src' folder ke andar hai)
+// Database connection
 import connectDB from './config/db.js';
-import loanRoutes from './routes/loanRoutes.js';
+
+// Routes (File name ke capitalization ke mutabik 'LoanRoutes.js')
+import loanRoutes from './routes/LoanRoutes.js';
 
 // Load environment variables
 dotenv.config();
